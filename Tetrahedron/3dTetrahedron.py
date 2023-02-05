@@ -6,7 +6,7 @@ point2 = (1,0,0)
 point3 = (0.5,math.sqrt(3)/2,0)
 point4 = (0.5,math.sqrt(3)/6,0)
 point5 = (0.5,math.sqrt(3)/6,math.sqrt(3)/2)
-point6 = (0.5,math.sqrt(3)/6,0.5)
+#point6 = (0.5,math.sqrt(3)/6,0.5)
 
 ## Create 3d lines: ##
 
@@ -33,6 +33,6 @@ ax.scatter(point2[0], point2[1], point2[2])
 ax.scatter(point3[0], point3[1], point3[2])
 ax.scatter(point4[0], point4[1], point4[2])
 ax.scatter(point5[0], point5[1], point5[2])
-ax.scatter(point6[0], point6[1], point6[2])
+#ax.scatter(point6[0], point6[1], point6[2])
 
 plt.show()
