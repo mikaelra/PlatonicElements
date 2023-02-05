@@ -12,7 +12,7 @@ Tetrahedron       | Fire
 Octahedron        | Air
 Hexahedron (Cube) | Earth
 Icosahedron       | Water
-Dodecahedrona     | Spirit
+Dodecahedron     | Spirit
 
 Each of the Platonic Elements can be found by drawing straight lines between the nodes in certain pattern from the Flower Of Life grid, except the Dodecahedron.
 An example of this is soon to come in the repo.
