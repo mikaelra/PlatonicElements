@@ -1,4 +1,4 @@
-# PlatonicElements
+# Platonic Elements
 Experimentation of plotting related to Platonic Elements
 
 You will need matplotlib to run these python programs
