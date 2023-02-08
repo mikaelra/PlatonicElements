@@ -1,5 +1,5 @@
 from matplotlib.pyplot import *
-from Circle import Circle
+from Circles import CircleWithLimits, Circle
 import math
 
 cOuter = Circle(0,0,3,1000)
@@ -29,6 +29,9 @@ c16 = Circle(-2*math.sqrt(3)/2 , 1,1,100)
 c17 = Circle(2*math.sqrt(3)/2 , 0,1,100)
 c18 = Circle(-2*math.sqrt(3)/2 , 0,1,100)
 
+#18 half circles is needed of some sort
+
+
 plot(cOuter[0],cOuter[1])
 plot(cOuter2[0],cOuter2[1])
 
@@ -56,6 +59,7 @@ plot(c16[0], c16[1])
 plot(c17[0], c17[1])
 plot(c18[0], c18[1])
 
+# 18 half Circle needs to be plotted
 
 
 show()
