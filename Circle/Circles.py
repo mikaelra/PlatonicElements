@@ -38,7 +38,8 @@ def CircleWithLimits(x0, y0, r, n, xmin, ymin, xmax, ymax):
     
     return [x, y]
 
-def GetNPointsFromCircle(n, r, x0, y0):
+def GetNPointsFromCircle(x0, y0, r, n):
+    # Does the same as Circle?? Almost the same, it doesn't connect the last dot
     x = []
     y = []
 
