@@ -48,14 +48,6 @@ def plotFlowerOfLifeForNLayers(n=6, x0=0, y0=0, r=1,np=100):
     x, y = CreateFlowerPointsOfLifeForNLayers(n, r, x0=x0, y0=y0)
     plotCircleForEachPoint(x, y, r=r, n=np)
 
-
-# plot(x1, y1, marker="o")
-# plot(x2core, y2core, marker="o")
-# plot(x2between, y2between, marker="o")
-# plot(x3core, y3core, marker="o")
-# plot(x3between, y3between, marker='o')
-#show()
-
 # x, y = Circles.GetNPointsFromCircle(x0=5, y0=5, r=3, n=6)
 # plot(x, y)
 # show()
