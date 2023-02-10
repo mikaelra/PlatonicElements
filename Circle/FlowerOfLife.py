@@ -1,5 +1,5 @@
 from matplotlib.pyplot import *
-from Circles import CircleWithLimits, Circle
+from Circles import Circle
 import math
 
 cOuter = Circle(0,0,3,1000)

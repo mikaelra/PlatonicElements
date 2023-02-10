@@ -3,7 +3,7 @@ import Circles
 
 from matplotlib.pyplot import *
 
-def makePointsFromCore6(n, r=1, x0=0, y0=0):
+def makeFoLNodesForLayerN(n, r=1, x0=0, y0=0):
     x1, y1 = Circles.GetNPointsFromCircle(n=6, r=r*n, x0=x0, y0=y0)
     x = []
     y = []
@@ -33,7 +33,7 @@ def CreateFlowerPointsOfLifeForNLayers(n, r=1, x0=0, y0=0):
     y += y1
 
     for i in range(2,n+1):
-        xi, yi = makePointsFromCore6(i, r=r, x0=x0, y0=y0)
+        xi, yi = makeFoLNodesForLayerN(i, r=r, x0=x0, y0=y0)
         x+=xi
         y+=yi
     
@@ -48,26 +48,26 @@ def plotFlowerOfLifeForNLayers(n=6, x0=0, y0=0, r=1,np=100):
     x, y = CreateFlowerPointsOfLifeForNLayers(n, r, x0=x0, y0=y0)
     plotCircleForEachPoint(x, y, r=r, n=np)
 
-# x, y = Circles.GetNPointsFromCircle(x0=5, y0=5, r=3, n=6)
-# plot(x, y)
-# show()
+x, y = Circles.GetNPointsFromCircle(x0=5, y0=5, r=3, n=6)
+plot(x, y)
+show()
 
-# x, y = makePointsFromCore6(1, 1,10,10)
-# plot(x,y)
-# x, y = makePointsFromCore6(3, 1, 0, 0)
-# plot(x,y)
-# show()
+x, y = makeFoLNodesForLayerN(1, 1,10,10)
+plot(x,y)
+x, y = makeFoLNodesForLayerN(3, 1, 0, 0)
+plot(x,y)
+show()
 
-# x, y = CreateFlowerPointsOfLifeForNLayers(n=3,r=1,x0=10,y0=5)
-# print(y)
-# plot(x, y)
-# show()
+x, y = CreateFlowerPointsOfLifeForNLayers(n=3,r=1,x0=10,y0=5)
+print(y)
+plot(x, y)
+show()
 
-# plotCircleForEachPoint(x, y)
-# show()
+plotCircleForEachPoint(x, y)
+show()
 
-# plotFlowerOfLifeForNLayers(6, 0, 1)
-# show()
+plotFlowerOfLifeForNLayers(6, 0, 1)
+show()
 
 plotFlowerOfLifeForNLayers(n=2,x0=0,y0=0, r=2)
 plotFlowerOfLifeForNLayers(n=2,x0=0,y0=0, r=1)

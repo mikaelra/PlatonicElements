@@ -1,14 +1,14 @@
 from matplotlib.pyplot import *
-from Circle import Circles
+from Circles import Circle
 import math
 
-c0 = Circles(0,0,1,100)
-c1 = Circles(0,1,1,100)
-c2 = Circles(0,-1,1,100)
-c3 = Circles(math.sqrt(3)/2, 1/2,1,100)
-c4 = Circles(-math.sqrt(3)/2, 1/2,1,100)
-c5 = Circles(math.sqrt(3)/2, -1/2,1,100)
-c6 = Circles(-math.sqrt(3)/2, -1/2,1,100)
+c0 = Circle(0,0,1,100)
+c1 = Circle(0,1,1,100)
+c2 = Circle(0,-1,1,100)
+c3 = Circle(math.sqrt(3)/2, 1/2,1,100)
+c4 = Circle(-math.sqrt(3)/2, 1/2,1,100)
+c5 = Circle(math.sqrt(3)/2, -1/2,1,100)
+c6 = Circle(-math.sqrt(3)/2, -1/2,1,100)
 
 
 plot(c0[0],c0[1])
