@@ -8,7 +8,7 @@ There is one Platonic Element corresponding to each of the 'elements': Fire, Wat
 
 Platonic Element | Element 
 ---|---
-Tetrahedron       | Fire    
+Tetrahedron       | Fire
 Octahedron        | Air
 Hexahedron (Cube) | Earth
 Icosahedron       | Water

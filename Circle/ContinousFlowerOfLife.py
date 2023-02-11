@@ -59,7 +59,6 @@ plot(x,y)
 show()
 
 x, y = CreateFlowerPointsOfLifeForNLayers(n=3,r=1,x0=10,y0=5)
-print(y)
 plot(x, y)
 show()
 
