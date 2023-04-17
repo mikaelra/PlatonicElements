@@ -105,4 +105,31 @@ ani = animation.FuncAnimation(
 #     fps=15, metadata=dict(artist='Me'), bitrate=1800)
 # ani.save("movie.mp4", writer=writer)
 
+# MIKAELS NOTES:
+# DIS MOVIE STUFF ABOVE DON'T WORK
+
 plt.show()
+
+# Create one merkaba seen from above
+x, y = createStarTetrahedron()
+plt.plot(x, y)
+plt.show()
+
+# Create 72 merkabas between 0 and 60 degrees (aka pi/3)
+
+m = 12
+for i in range(m):
+    x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
+    plt.plot(x, y)
+
+plt.show()
+
+# Create seventy-two merkabas between 0 and 60 degrees (aka pi/3)
+
+m = 72
+for i in range(m):
+    x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
+    plt.plot(x, y)
+
+plt.show()
+
