@@ -69,13 +69,13 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 def animate(i):
-    x0, y0 = createStarTetrahedron()
-    x, y = createStarTetrahedron(deg=i)
-    x2, y2 = createStarTetrahedron(deg=3*math.pi / 2 - i)
-    x += x2
-    y += y2
+    x, y = createStarTetrahedron(x0 = 2 - 0.025*i, y0 = 0)
+    x0, y0 = createStarTetrahedron(x0 = 0, y0 = 0)
+    x2, y2 = createStarTetrahedron(x0 = -2 + 0.025*i, y0 = 0)
     x += x0
     y += y0
+    x += x2
+    y += y2
     line.set_ydata(y)  # update the data.
     line.set_xdata(x)
     return line,
@@ -83,11 +83,11 @@ def animate(i):
 if __name__ == "__main__":
 
     fig, ax = plt.subplots()
-    ax.set_xlim([-1,1])
-    ax.set_ylim([-1,1])
+    ax.set_xlim([-4,4])
+    ax.set_ylim([-4,4])
 
     x, y = createStarTetrahedron()
-    x2, y2 = createStarTetrahedron(deg=3*math.pi / 2)
+    x2, y2 = createStarTetrahedron()
     x += x2
     y += y2
 
