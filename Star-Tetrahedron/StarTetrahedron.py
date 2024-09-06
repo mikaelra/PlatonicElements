@@ -68,17 +68,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-if __name__ == "__main__":
-    fig, ax = plt.subplots()
-    ax.set_xlim([-1,1])
-    ax.set_ylim([-1,1])
+# if __name__ == "__main__":
+#     fig, ax = plt.subplots()
+#     ax.set_xlim([-1,1])
+#     ax.set_ylim([-1,1])
 
-    x, y = createStarTetrahedron()
-    x2, y2 = createStarTetrahedron(deg=3*math.pi / 2)
-    x += x2
-    y += y2
+#     x, y = createStarTetrahedron()
+#     x2, y2 = createStarTetrahedron(deg=3*math.pi / 2)
+#     x += x2
+#     y += y2
 
-    line, = ax.plot(x, y)
+#     line, = ax.plot(x, y)
 
 
 def animate(i):
@@ -95,43 +95,52 @@ def animate(i):
 
 if __name__ == "__main__":
 
-    ani = animation.FuncAnimation(
-        fig, animate, interval=20, blit=True, save_count=50)
+    # ani = animation.FuncAnimation(
+    #     fig, animate, interval=20, blit=True, save_count=50)
 
-    # To save the animation, use e.g.
-    #
-    # ani.save("movie.mp4")
-    #
-    # or
-    #
-    # writer = animation.FFMpegWriter(
-    #     fps=15, metadata=dict(artist='Me'), bitrate=1800)
-    # ani.save("movie.mp4", writer=writer)
+    # # To save the animation, use e.g.
+    # #
+    # # ani.save("movie.mp4")
+    # #
+    # # or
+    # #
+    # # writer = animation.FFMpegWriter(
+    # #     fps=15, metadata=dict(artist='Me'), bitrate=1800)
+    # # ani.save("movie.mp4", writer=writer)
 
-    # MIKAELS NOTES:
-    # DIS MOVIE STUFF ABOVE DON'T WORK
+    # # MIKAELS NOTES:
+    # # DIS MOVIE STUFF ABOVE DON'T WORK
+    # plt.show()
+
+    # # Create one merkaba seen from above
+    # x, y = createStarTetrahedron()
+    # plt.plot(x, y)
+    # plt.show()
+
+    # # Create 72 merkabas between 0 and 60 degrees (aka pi/3)
+
+    # m = 12
+    # for i in range(m):
+    #     x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
+    #     plt.plot(x, y)
+
+    # plt.show()
+
+    # # Create seventy-two merkabas between 0 and 60 degrees (aka pi/3)
+
+    # m = 72
+    # for i in range(m):
+    #     x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
+    #     plt.plot(x, y)
+
+    # plt.show()
+
+
+
+    x0, y0 = createStarTetrahedron(x0 = 3, y0 = 0)
+    x1, y1 = createStarTetrahedron(x0 = 0, y0 = 0)
+    x2, y2 = createStarTetrahedron(x0 = -3, y0 = 0)
+    plt.plot(x0, y0)
+    plt.plot(x1, y1)
+    plt.plot(x2, y2)
     plt.show()
-
-    # Create one merkaba seen from above
-    x, y = createStarTetrahedron()
-    plt.plot(x, y)
-    plt.show()
-
-    # Create 72 merkabas between 0 and 60 degrees (aka pi/3)
-
-    m = 12
-    for i in range(m):
-        x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
-        plt.plot(x, y)
-
-    plt.show()
-
-    # Create seventy-two merkabas between 0 and 60 degrees (aka pi/3)
-
-    m = 72
-    for i in range(m):
-        x, y = createStarTetrahedron(deg=math.pi / 2 + i*math.pi/(3*m))
-        plt.plot(x, y)
-
-    plt.show()
-
